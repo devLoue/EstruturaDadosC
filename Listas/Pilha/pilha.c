@@ -3,10 +3,10 @@
 
 typedef struct No {
     int dado;
-    struct No *prox;
+    struct No *prox; //Este é um ponteiro para outro nó do tipo struct No
 } No;
 
-No* criarNo(int valor){
+No *criarNo(int valor){
     No* novo = (No*)calloc(1,sizeof(No));
     if (!novo){
         printf("Erro de alocação!\n");
